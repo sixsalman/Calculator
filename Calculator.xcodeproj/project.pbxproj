@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		22741F2926C0C8BC00E5885C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22741F2826C0C8BC00E5885C /* AppDelegate.swift */; };
 		22741F2B26C0C8BC00E5885C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22741F2A26C0C8BC00E5885C /* SceneDelegate.swift */; };
-		22741F2D26C0C8BC00E5885C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22741F2C26C0C8BC00E5885C /* ViewController.swift */; };
+		22741F2D26C0C8BC00E5885C /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22741F2C26C0C8BC00E5885C /* CalculatorViewController.swift */; };
 		22741F3026C0C8BC00E5885C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22741F2E26C0C8BC00E5885C /* Main.storyboard */; };
 		22741F3226C0C8BD00E5885C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22741F3126C0C8BD00E5885C /* Assets.xcassets */; };
 		22741F3526C0C8BD00E5885C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22741F3326C0C8BD00E5885C /* LaunchScreen.storyboard */; };
+		22741F3D26C1142100E5885C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22741F3C26C1142100E5885C /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22741F2526C0C8BC00E5885C /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22741F2826C0C8BC00E5885C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22741F2A26C0C8BC00E5885C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22741F2C26C0C8BC00E5885C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22741F2C26C0C8BC00E5885C /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		22741F2F26C0C8BC00E5885C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22741F3126C0C8BD00E5885C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22741F3426C0C8BD00E5885C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22741F3626C0C8BD00E5885C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22741F3C26C1142100E5885C /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				22741F2826C0C8BC00E5885C /* AppDelegate.swift */,
 				22741F2A26C0C8BC00E5885C /* SceneDelegate.swift */,
-				22741F2C26C0C8BC00E5885C /* ViewController.swift */,
+				22741F2C26C0C8BC00E5885C /* CalculatorViewController.swift */,
 				22741F2E26C0C8BC00E5885C /* Main.storyboard */,
+				22741F3C26C1142100E5885C /* HistoryViewController.swift */,
 				22741F3126C0C8BD00E5885C /* Assets.xcassets */,
 				22741F3326C0C8BD00E5885C /* LaunchScreen.storyboard */,
 				22741F3626C0C8BD00E5885C /* Info.plist */,
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22741F2D26C0C8BC00E5885C /* ViewController.swift in Sources */,
+				22741F2D26C0C8BC00E5885C /* CalculatorViewController.swift in Sources */,
 				22741F2926C0C8BC00E5885C /* AppDelegate.swift in Sources */,
 				22741F2B26C0C8BC00E5885C /* SceneDelegate.swift in Sources */,
+				22741F3D26C1142100E5885C /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
