@@ -27,6 +27,7 @@ class CalculatorViewController: UIViewController {
         switch sender.title(for: .normal) {
         case "Clear":
             operandOne = 0
+            operation = nil
             numLabel.text = "0"
         case "=":
             UpdateResOnLabel()
@@ -112,16 +113,21 @@ class CalculatorViewController: UIViewController {
                 return
             }
             
+            let formattedOperandOne = nf.string(from: NSNumber(value: operandOne))!
+            let formattedOperandTwo = nf.string(from: NSNumber(value: nf.number(from: numLabel.text!)!.doubleValue))!
+            
             if newNum.isFinite {
-                pastCalcs.append("\(operandOne) \(operation) \(nf.number(from: numLabel.text!)!.doubleValue) = \(newNum)")
+                let formattedRes = nf.string(from: NSNumber(value: newNum))!
                 
-                numLabel.text = nf.string(from: NSNumber(value: newNum))
+                pastCalcs.append("\(formattedOperandOne) \(operation) \(formattedOperandTwo) = \(formattedRes)")
+                
+                numLabel.text = formattedRes
             } else {
                 let msgBox = UIAlertController(title: "Error", message: "You attemptd to perform calculation with a non-finite number. Value has been set to 0", preferredStyle: UIAlertController.Style.alert)
                 msgBox.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
                 self.present(msgBox, animated: true, completion: nil)
                 
-                pastCalcs.append("\(operandOne) \(operation) \(nf.number(from: numLabel.text!)!.doubleValue) = not finite")
+                pastCalcs.append("\(formattedOperandOne) \(operation) \(formattedOperandTwo) = not finite")
                 
                 numLabel.text = "0"
             }
